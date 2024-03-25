@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Links in New Tab",
+    "version": "1.0",
+    "description": "Make all hyperlinks in GitHub comments open in a new tab",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
